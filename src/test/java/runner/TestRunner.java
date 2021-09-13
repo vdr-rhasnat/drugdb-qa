@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         glue = "step",
         strict = true,
-        plugin = {"com.qmetry.qaf.automation.cucumber.QAFCucumberPlugin"}
+        plugin = { "com.qmetry.qaf.automation.cucumber.QAFCucumberPlugin", "pretty", "html:target/cucumber-pretty.html" }
 )
 
 public class TestRunner {
